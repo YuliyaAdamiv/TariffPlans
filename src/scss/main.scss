@@ -35,11 +35,16 @@ button {
     padding: 40px 80px 70px 80px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .container {
     padding: 40px 30px 70px 30px;
   }
 }
+// @media (max-width: 480px) {
+//   .container {
+//     padding: 40px 30px 70px 30px;
+//   }
+// }
 @media (max-width: 360px) {
   .container {
     padding: 40px 16px 70px 16px;

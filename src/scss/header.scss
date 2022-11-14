@@ -24,6 +24,11 @@
     background: $hover-btn;
   }
 }
+@media (max-width: 768px) {
+  .container-header {
+    padding: 40px 30px;
+  }
+}
 @media (max-width: 480px) {
   .header_btn {
     display: none;

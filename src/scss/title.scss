@@ -11,6 +11,7 @@
   font-size: 18px;
   line-height: 27px;
   color: $grey-violet;
+  max-width: 584px;
 }
 .btn {
   font-weight: 500;
@@ -49,12 +50,11 @@
   .title-items {
     display: flex;
     flex-direction: column;
+    margin-bottom: 32px;
   }
   .title-description {
+    max-width: 100%;
     margin-bottom: 37px;
-  }
-  .title-items {
-    margin-bottom: 32px;
   }
 }
 @media (max-width: 360px) {
