@@ -121,6 +121,7 @@ button {
   font-size: 17px;
   line-height: 26px;
   color: #848199;
+  margin-left: 10px;
 }
 
 .tariff-name {
@@ -142,6 +143,11 @@ button {
 .tariff-list {
   display: flex;
   flex-direction: column;
+}
+
+.card {
+  height: 387px;
+  position: relative;
 }
 
 .tariff-item {
@@ -170,6 +176,9 @@ button {
   text-align: center;
   color: #f5f5fa;
   width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .tariff-choose :hover {
@@ -193,6 +202,7 @@ button {
 
 .card-3 {
   width: 292px;
+  height: 473px;
   padding: 20px 30px;
   background: #231d4f;
   box-shadow: 0px 42px 34px rgba(82, 67, 194, 0.295755);
@@ -208,18 +218,23 @@ button {
 
 .violet {
   background: #bb6bd9;
+  border: none;
+  border-radius: 24px;
+  padding: 11px 56px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: #f5f5fa;
+  width: 80%;
+  margin: 0 30px;
+  position: absolute;
+  right: 0;
+  bottom: 20px;
 }
 
-.p {
-  padding-bottom: 21px;
-}
-
-.card-2 {
-  padding-bottom: 52px;
-}
-
-.card-1 {
-  padding-bottom: 83px;
+.violet :hover {
+  background: #a847cc;
 }
 
 .tariff .card {
@@ -369,7 +384,17 @@ button {
 
 .title-yearly {
   color: #3b3472;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: #f5f5fa;
+}
+
+.active {
+  background-color: #bb6bd9;
+  color: #f5f5fa;
+  box-shadow: rgba(82, 67, 194, 0.16);
+}
+
+button.title-yearly {
+  background: #f5f5fa;
 }
 
 .title-items {
@@ -379,10 +404,20 @@ button {
   margin-bottom: 90px;
 }
 
+.title-items div:nth-child(1) {
+  margin-right: 20px;
+}
+
 .title-btn {
   display: flex;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 22px;
+}
+
+@media (max-width: 900px) {
+  .title-description {
+    max-width: 554px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -401,5 +436,9 @@ button {
 @media (max-width: 360px) {
   .title-item {
     font-size: 38px;
+  }
+
+  .title-items div:nth-child(1) {
+    margin-right: 0px;
   }
 }

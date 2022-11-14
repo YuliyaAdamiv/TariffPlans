@@ -23,6 +23,7 @@
   font-size: 17px;
   line-height: 26px;
   color: $grey-violet;
+  margin-left: 10px;
 }
 .tariff-name {
   font-weight: 500;
@@ -42,7 +43,10 @@
   display: flex;
   flex-direction: column;
 }
-
+.card {
+  height: 387px;
+  position: relative;
+}
 .tariff-item {
   font-weight: 500;
   font-size: 15px;
@@ -67,6 +71,9 @@
   text-align: center;
   color: $base-color;
   width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
   :hover {
     background: $hover-btn;
   }
@@ -87,6 +94,7 @@
 }
 .card-3 {
   width: 292px;
+  height: 473px;
   padding: 20px 30px;
   background: $dark-violet;
   box-shadow: 0px 42px 34px $shadow-card;
@@ -100,15 +108,22 @@
 }
 .violet {
   background: $light-violet;
-}
-.p {
-  padding-bottom: 21px;
-}
-.card-2 {
-  padding-bottom: 52px;
-}
-.card-1 {
-  padding-bottom: 83px;
+  border: none;
+  border-radius: 24px;
+  padding: 11px 56px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: $base-color;
+  width: 80%;
+  margin: 0 30px;
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  :hover {
+    background: $hover-btn;
+  }
 }
 .tariff .card {
   margin-right: 59px;

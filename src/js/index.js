@@ -1,22 +1,25 @@
-function changePrice() {
+function yearlyPrice() {
   document.getElementById('price-1').innerHTML = '$12';
   document.getElementById('price-2').innerHTML = '$36';
   document.getElementById('price-3').innerHTML = '$56';
-  document.getElementById('yearly').style.backgroundColor = '#bb6bd9';
-  document.getElementById('yearly').style.color = '#fff';
-  document.getElementById('monthly').style.backgroundColor = '#fff';
-  document.getElementById('monthly').style.color = '#3b3472';
-  document.getElementById('title-btn').style.backgroundColor = '#fff';
-  document.getElementById('monthly').style.boxShadow = 'none';
+  var current = document.getElementsByClassName('active');
+  if (current.length > 0) {
+    current[0].className = current[0].className.replace(' active', '  ');
+  }
+  this.className += ' active';
 }
-function cleanPrice() {
+function monthlyPrice() {
   document.getElementById('price-1').innerHTML = '$19';
   document.getElementById('price-2').innerHTML = '$54';
   document.getElementById('price-3').innerHTML = '$89';
-  document.getElementById('monthly').style.backgroundColor = '#bb6bd9';
-  document.getElementById('monthly').style.color = '#fff';
-  document.getElementById('yearly').style.color = '#3b3472';
-  document.getElementById('yearly').style.backgroundColor = '#fff';
-  document.getElementById('title-btn').style.backgroundColor = '#fff';
-  document.getElementById('yearly').style.boxShadow = 'rgba(82, 67, 194, 0.16)';
+}
+var btns = document.getElementsByClassName('btn');
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener('click', function () {
+    var current = document.getElementsByClassName('active');
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace(' active', '  ');
+    }
+    this.className += ' active';
+  });
 }

@@ -33,7 +33,15 @@
 }
 .title-yearly {
   color: $text-btn;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: $base-color;
+}
+.active {
+  background-color: $light-violet;
+  color: $base-color;
+  box-shadow: $shadow-btn;
+}
+button.title-yearly {
+  background: $base-color;
 }
 .title-items {
   display: flex;
@@ -41,10 +49,18 @@
   align-items: center;
   margin-bottom: 90px;
 }
+.title-items div:nth-child(1) {
+  margin-right: 20px;
+}
 .title-btn {
   display: flex;
   background: $yearly;
   border-radius: 22px;
+}
+@media (max-width: 900px) {
+  .title-description {
+    max-width: 554px;
+  }
 }
 @media (max-width: 768px) {
   .title-items {
@@ -60,5 +76,8 @@
 @media (max-width: 360px) {
   .title-item {
     font-size: 38px;
+  }
+  .title-items div:nth-child(1) {
+    margin-right: 0px;
   }
 }
