@@ -1,0 +1,164 @@
+@import './variables.scss';
+.tariff {
+  background: $shadow-block;
+  flex-wrap: wrap;
+  border-radius: 26px;
+  padding: 40px 0 40px 68px;
+  display: flex;
+  position: relative;
+}
+.tariff-header {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 23px;
+}
+.tariff-price {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  color: $dark-violet;
+}
+.tariff-month {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 26px;
+  color: $grey-violet;
+}
+.tariff-name {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+  color: $dark-violet;
+}
+.tariff-description {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: $grey-violet;
+  margin-bottom: 14px;
+}
+.tariff-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.tariff-item {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: $grey-violet;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  padding-bottom: 8px;
+}
+.tariff-item img {
+  margin-right: 10px;
+}
+.tariff-choose {
+  background: $dark-violet;
+  border: none;
+  border-radius: 24px;
+  padding: 11px 56px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: $base-color;
+  width: 100%;
+  :hover {
+    background: $hover-btn;
+  }
+}
+.popular {
+  padding: 7px 16px;
+  background: $popular-btn;
+  border-radius: 13.5px;
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.833333px;
+  color: $light-violet;
+  border: none;
+  margin-left: 109px;
+  margin-bottom: 20px;
+}
+.card-3 {
+  width: 292px;
+  padding: 20px 30px;
+  background: $dark-violet;
+  box-shadow: 0px 42px 34px $shadow-card;
+  border-radius: 26px;
+  position: absolute;
+  top: -30px;
+  right: 35px;
+}
+.white {
+  color: $base-color;
+}
+.violet {
+  background: $light-violet;
+}
+.p {
+  padding-bottom: 21px;
+}
+.card-2 {
+  padding-bottom: 52px;
+}
+.card-1 {
+  padding-bottom: 83px;
+}
+.tariff .card {
+  margin-right: 100px;
+}
+
+@media (max-width: 1250px) {
+  .tariff .card {
+    margin-right: 1%;
+  }
+}
+@media (max-width: 999px) {
+  .tariff .card {
+    margin-right: 20%;
+  }
+  .card-3 {
+    position: relative;
+    margin: 50px 0;
+    top: 0;
+    right: 0;
+  }
+}
+@media (max-width: 920px) {
+  .tariff .card {
+    margin-right: 10%;
+  }
+}
+@media (max-width: 768px) {
+  .tariff {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .tariff .card {
+    margin-right: 0;
+  }
+  .card {
+    margin-top: 32px;
+  }
+}
+@media (max-width: 480px) {
+  .card-3 {
+    width: 272px;
+    margin-bottom: 8px;
+  }
+  .popular {
+    margin: 0 auto 20px;
+    display: block;
+  }
+  .card-2,
+  .card-1 {
+    padding-bottom: 32px;
+  }
+}

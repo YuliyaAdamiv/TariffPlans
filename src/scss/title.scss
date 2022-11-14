@@ -1,0 +1,64 @@
+@import './variables.scss';
+.title-item {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+  color: $dark-violet;
+  margin-bottom: 25px;
+}
+.title-description {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: $grey-violet;
+}
+.btn {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.833333px;
+  padding: 13px 24px;
+  border: none;
+  border-radius: 22px;
+}
+.title-monthly {
+  color: $base-color;
+  background: $light-violet;
+  box-shadow: 0px 6px 12px $shadow-btn;
+  :hover {
+    background: $hover-btn;
+  }
+}
+.title-yearly {
+  color: $text-btn;
+  background-color: rgba(255, 255, 255, 0);
+}
+.title-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 90px;
+}
+.title-btn {
+  display: flex;
+  background: $yearly;
+  border-radius: 22px;
+}
+@media (max-width: 768px) {
+  .title-items {
+    display: flex;
+    flex-direction: column;
+  }
+  .title-description {
+    margin-bottom: 37px;
+  }
+  .title-items {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 360px) {
+  .title-item {
+    font-size: 38px;
+  }
+}

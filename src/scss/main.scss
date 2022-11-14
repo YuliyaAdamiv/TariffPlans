@@ -1,0 +1,47 @@
+@import './variables.scss';
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(../img/Pricing/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 40px 230px 70px 200px;
+}
+button {
+  cursor: pointer;
+}
+
+@media (max-width: 1350px) {
+  .container {
+    padding: 40px 180px 70px 150px;
+  }
+}
+@media (max-width: 1250px) {
+  .container {
+    padding: 40px 150px 70px 150px;
+  }
+}
+@media (max-width: 1150px) {
+  .container {
+    padding: 40px 80px 70px 80px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    padding: 40px 30px 70px 30px;
+  }
+}
+@media (max-width: 360px) {
+  .container {
+    padding: 40px 16px 70px 16px;
+  }
+}
