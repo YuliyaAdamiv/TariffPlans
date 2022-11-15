@@ -93,7 +93,8 @@
   margin-bottom: 20px;
 }
 .card-most-popular {
-  width: 292px;
+  max-width: 292px;
+  width: 26vw;
   height: 473px;
   padding: 20px 30px;
   background: $dark-violet;
@@ -138,6 +139,10 @@
   .tariff .card {
     margin-right: 3%;
   }
+  .popular {
+    display: block;
+    margin: 0 auto;
+  }
   .tariff {
     padding: 40px 0 40px 45px;
   }
@@ -150,9 +155,9 @@
     margin-right: 9%;
   }
   .card-most-popular {
-    width: 266px;
+    width: 32vw;
     right: 15px;
-    padding: 20px 10px;
+    padding: 20px 20px;
   }
   .popular {
     margin: 0 auto 20px;
@@ -175,7 +180,6 @@
     padding: 40px 0 40px 20px;
   }
   .card-most-popular {
-    width: 246px;
     right: 15px;
     padding: 20px 10px;
   }
@@ -217,8 +221,8 @@
     display: block;
   }
   .card-most-popular {
-    width: 200px;
-    height: 531px;
+    width: 30vw;
+    height: 569px;
   }
   .tariff-choose {
     padding: 11px 27px;
@@ -241,6 +245,16 @@
   .tariff {
     padding: 40px 0 40px 20px;
   }
+  .card-most-popular {
+    width: 37vw;
+  }
+  .popular {
+    margin: 0 auto 20px;
+    display: block;
+  }
+  .violet {
+    margin: 0 18px;
+  }
 }
 @media (max-width: 480px) {
   .tariff {
@@ -251,14 +265,17 @@
     margin: 0 30px;
   }
   .card-most-popular {
-    width: 252px;
+    width: 84vw;
     margin-bottom: 8px;
+    padding: 20px;
   }
   .popular {
     margin: 0 auto 20px;
     display: block;
   }
-
+  .violet {
+    margin: 0 30px;
+  }
   .tariff-choose {
     padding: 11px 30px;
   }
