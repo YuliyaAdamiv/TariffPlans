@@ -144,32 +144,89 @@
 }
 @media (max-width: 999px) {
   .tariff {
-    justify-content: space-between;
+    padding: 40px 0 40px 20px;
   }
-  .tariff .card {
-    margin-right: 17%;
-  }
-  .card-3 {
-    position: relative;
-    margin: 50px 0;
-    top: 0;
-    right: 0;
-  }
-}
-@media (max-width: 920px) {
   .tariff .card {
     margin-right: 9%;
   }
+  .card-3 {
+    width: 266px;
+    right: 15px;
+    padding: 20px 10px;
+  }
+  .popular {
+    margin: 0 auto 20px;
+    display: block;
+  }
+  .tariff-choose {
+    width: 90%;
+    padding: 11px 20px;
+    left: 0;
+  }
+  .tariff-description {
+    max-width: 188px;
+  }
+  .violet {
+    padding: 11px 20px;
+  }
+}
+@media (max-width: 820px) {
+  .tariff {
+    padding: 40px 0 40px 20px;
+  }
+  .card-3 {
+    width: 246px;
+    right: 15px;
+    padding: 20px 10px;
+  }
+  .popular {
+    margin: 0 auto 20px;
+    display: block;
+  }
+  .tariff-choose {
+    width: 90%;
+    padding: 11px 20px;
+    left: 0;
+  }
+  .tariff-description {
+    max-width: 188px;
+  }
+  .violet {
+    padding: 11px 20px;
+  }
+  .tariff .card {
+    margin-right: 6%;
+  }
+  //   .tariff {
+  //     justify-content: space-between;
+  //   }
+  //   .tariff .card {
+  //     margin-right: 17%;
+  //   }
+  //   .card-3 {
+  //     position: relative;
+  //     margin: 50px 0;
+  //     top: 0;
+  //     right: 0;
+  //   }
+}
+@media (max-width: 920px) {
+  //   .tariff .card {
+  //     margin-right: 9%;
+  //   }
 }
 @media (max-width: 768px) {
+  .tariff {
+    padding: 40px 45px 40px 45px;
+  }
   .card {
     margin-top: 32px;
   }
   .tariff-description {
-    max-width: 200px;
+    max-width: 180px;
   }
   .tariff .card {
-    margin-right: 3%;
+    margin-right: 10%;
   }
 
   .popular {
@@ -177,41 +234,55 @@
     display: block;
   }
   .card-3 {
-    width: 210px;
+    width: 200px;
+    height: 531px;
   }
   .tariff-choose {
     padding: 11px 27px;
   }
+  .tariff {
+    justify-content: space-between;
+  }
+
+  .card-3 {
+    position: relative;
+    margin: 50px 0;
+    top: 0;
+    right: 0;
+  }
 }
 @media (max-width: 600px) {
+  .tariff .card {
+    margin-right: 20px;
+  }
+  .tariff {
+    padding: 40px 0 40px 20px;
+  }
+}
+@media (max-width: 480px) {
   .tariff {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0;
-  }
-  .tariff .card {
-    margin-right: 0;
+    margin: 0 30px;
   }
   .card-3 {
-    width: 272px;
-    margin-bottom: 8px;
-  }
-  .tariff-choose {
-    padding: 11px 56px;
-  }
-}
-@media (max-width: 480px) {
-  .card-3 {
-    width: 272px;
+    width: 252px;
     margin-bottom: 8px;
   }
   .popular {
     margin: 0 auto 20px;
     display: block;
   }
-  .card-2,
-  .card-1 {
-    padding-bottom: 32px;
+
+  .tariff-choose {
+    padding: 11px 30px;
+  }
+}
+@media (max-width: 420px) {
+  .tariff {
+    padding: 0;
+    margin: 0;
   }
 }

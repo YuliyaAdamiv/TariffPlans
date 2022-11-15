@@ -33,15 +33,12 @@
 }
 .title-yearly {
   color: $text-btn;
-  background-color: $base-color;
+  background: $base-color;
 }
 .active {
   background-color: $light-violet;
   color: $base-color;
   box-shadow: $shadow-btn;
-}
-button.title-yearly {
-  background: $base-color;
 }
 .title-items {
   display: flex;
@@ -54,7 +51,7 @@ button.title-yearly {
 }
 .title-btn {
   display: flex;
-  background: $yearly;
+  background: $base-color;
   border-radius: 22px;
 }
 @media (max-width: 900px) {
@@ -73,11 +70,19 @@ button.title-yearly {
     margin-bottom: 37px;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 480px) {
+  .title {
+    margin: 0 30px;
+  }
+}
+@media (max-width: 420px) {
   .title-item {
     font-size: 38px;
   }
   .title-items div:nth-child(1) {
     margin-right: 0px;
+  }
+  .title {
+    margin: 0;
   }
 }

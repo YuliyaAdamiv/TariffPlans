@@ -35,5 +35,12 @@
   }
   .container-header {
     padding: 40px 27px;
+    margin: 0 30px;
+  }
+}
+@media (max-width: 420px) {
+  .container-header {
+    padding: 40px 27px;
+    margin: 0;
   }
 }
