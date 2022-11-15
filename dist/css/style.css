@@ -287,7 +287,7 @@ button {
   }
 
   .card-most-popular {
-    width: 32vw;
+    width: 35vw;
     right: 15px;
     padding: 20px 20px;
   }
@@ -375,6 +375,7 @@ button {
 
   .tariff-choose {
     padding: 11px 27px;
+    left: 20px;
   }
 
   .tariff {
@@ -396,6 +397,11 @@ button {
 
   .tariff {
     padding: 40px 0 40px 20px;
+  }
+
+  .tariff-choose {
+    padding: 11px 27px;
+    left: 20px;
   }
 
   .card-most-popular {
@@ -438,6 +444,7 @@ button {
 
   .tariff-choose {
     padding: 11px 30px;
+    left: 0;
   }
 }
 
@@ -445,6 +452,10 @@ button {
   .tariff {
     padding: 0;
     margin: 0;
+  }
+
+  .tariff-choose {
+    left: 0;
   }
 }
 .title-item {
