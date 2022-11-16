@@ -141,10 +141,28 @@
   }
   .popular {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 20px;
   }
   .tariff {
     padding: 40px 0 40px 45px;
+  }
+}
+@media (max-width: 1150px) {
+  .tariff .card {
+    margin-right: 7%;
+  }
+}
+@media (max-width: 1100px) {
+  .tariff .card {
+    margin-right: 6%;
+  }
+}
+@media (max-width: 1050px) {
+  .tariff .card {
+    margin-right: 5%;
+  }
+  .tariff-item {
+    font-size: 14px;
   }
 }
 @media (max-width: 999px) {
@@ -152,10 +170,13 @@
     padding: 40px 0 40px 20px;
   }
   .tariff .card {
-    margin-right: 9%;
+    margin-right: 12%;
+  }
+  .tariff-item {
+    font-size: 15px;
   }
   .card-most-popular {
-    width: 35vw;
+    width: 30vw;
     right: 15px;
     padding: 20px 20px;
   }
@@ -180,6 +201,7 @@
     padding: 40px 0 40px 20px;
   }
   .card-most-popular {
+    width: 30vw;
     right: 15px;
     padding: 20px 10px;
   }
@@ -204,65 +226,6 @@
 }
 @media (max-width: 768px) {
   .tariff {
-    padding: 40px 80px 40px 80px;
-  }
-  .card {
-    margin-top: 32px;
-  }
-  .tariff-description {
-    max-width: 180px;
-  }
-  .tariff .card {
-    margin-right: 1%;
-  }
-
-  .popular {
-    margin: 0 auto 20px;
-    display: block;
-  }
-  .card-most-popular {
-    width: 30vw;
-    height: 569px;
-  }
-  .tariff-choose {
-    padding: 11px 27px;
-    left: 20px;
-  }
-  .tariff {
-    justify-content: space-between;
-  }
-
-  .card-most-popular {
-    position: relative;
-    margin: 50px 0;
-    top: 0;
-    right: 0;
-  }
-}
-@media (max-width: 600px) {
-  .tariff .card {
-    margin-right: 20px;
-  }
-  .tariff {
-    padding: 40px 0 40px 20px;
-  }
-  .tariff-choose {
-    padding: 11px 27px;
-    left: 20px;
-  }
-  .card-most-popular {
-    width: 37vw;
-  }
-  .popular {
-    margin: 0 auto 20px;
-    display: block;
-  }
-  .violet {
-    margin: 0 18px;
-  }
-}
-@media (max-width: 480px) {
-  .tariff {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -285,7 +248,89 @@
     padding: 11px 30px;
     left: 0;
   }
+  //   .tariff {
+  //     padding: 40px 80px 40px 80px;
+  //   }
+  .card {
+    margin-top: 32px;
+  }
+  //   .tariff-description {
+  //     max-width: 180px;
+  //   }
+  //   .tariff .card {
+  //     margin-right: 1%;
+  //   }
+
+  //   .popular {
+  //     margin: 0 auto 20px;
+  //     display: block;
+  //   }
+  //   .card-most-popular {
+  //     width: 30vw;
+  //     height: 569px;
+  //   }
+  //   .tariff-choose {
+  //     padding: 11px 27px;
+  //     left: 20px;
+  //   }
+  //   .tariff {
+  //     justify-content: space-between;
+  //   }
+
+  .card-most-popular {
+    position: relative;
+    margin: 50px 0;
+    top: 0;
+    right: 0;
+  }
 }
+// @media (max-width: 600px) {
+//   .tariff .card {
+//     margin-right: 20px;
+//   }
+//   .tariff {
+//     padding: 40px 0 40px 20px;
+//   }
+//   .tariff-choose {
+//     padding: 11px 27px;
+//     left: 20px;
+//   }
+//   .card-most-popular {
+//     width: 37vw;
+//   }
+//   .popular {
+//     margin: 0 auto 20px;
+//     display: block;
+//   }
+//   .violet {
+//     margin: 0 18px;
+//   }
+// }
+// @media (max-width: 480px) {
+//   .tariff {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     padding: 0;
+//     margin: 0 30px;
+//   }
+//   .card-most-popular {
+//     width: 84vw;
+//     margin-bottom: 8px;
+//     padding: 20px;
+//   }
+//   .popular {
+//     margin: 0 auto 20px;
+//     display: block;
+//   }
+//   .violet {
+//     margin: 0 30px;
+//   }
+//   .tariff-choose {
+//     padding: 11px 30px;
+//     left: 0;
+//   }
+// }
 @media (max-width: 420px) {
   .tariff {
     padding: 0;
